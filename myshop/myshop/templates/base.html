@@ -1,0 +1,34 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ustora Demo</title>
+    
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+  </head>
+    <script type="text/javascript" src="{% static 'js/bxslider.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/script.slider.js' %}"></script>
+<body>
+{% include "base_templ/header_area.html" %}
+{% include "base_templ/site_branding_area.html" %}
+{% include "base_templ/main_menu.html" %}
+{% block main %}
+{% endblock main %}
+{% include "base_templ/footer_top_area.html" %}
+{% include "base_templ/footer_bottom_area.html" %}
+
+</body>
+</html>
